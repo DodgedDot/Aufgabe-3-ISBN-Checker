@@ -2,8 +2,9 @@
 <head>Check-ISBN</head>
 <Body>
     <input type="text"></input>
-    <button onClick={checkISBN()}>Check</button>
+    <button id="checkButton">Check</button>
     <script>
+        checkButton.addEventListener("click", checkISBN)
         function checkISBN() {
             alert("checkISBN")
         }
