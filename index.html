@@ -4,20 +4,7 @@
     <input id="inputFieldISBN" type="text"></input>
     <button id="checkButton">Check</button>
     <text id="userFeedback"></text>
-    <script>
-        checkButton.addEventListener("click", checkISBN)
-        function checkISBN(checkSum) {
-            //inputFieldISBN = document.getElementById("inputFieldISBN")
-            //userFeedback = document.getElementById("userFeedback")
-            let tenthSpot = inputFieldISBN.value.split("")
-            if(tenthSpot[9] === checkSum.toString()){
-                userFeedback.textContent = "ISBN is valid"
-                userFeedback.style.color = "green"
-            } else{
-                userFeedback.textContent = "ISBN is invalid"
-                userFeedback.style.color = "red"
-            }
-            
-        }
+    <script src ="./index.js">
+       
     </script>
 </Body>
