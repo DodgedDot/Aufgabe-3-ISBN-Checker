@@ -12,7 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "serve": "^13.0.2"
+    "serve": "^13.0.2",
+    "webpack": "^5.65.0"
   },
   "devDependencies": {
     "jest": "^27.4.5",
