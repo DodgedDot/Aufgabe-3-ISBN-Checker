@@ -15,7 +15,10 @@ function checkISBN(checkSum) {
 }
 
 function calculateISBNChecksum (inputString){
-    return inputString.split('')
+    var output = inputString.split('')
+    output.forEach((element, index) => { output[index] = parseInt(element)
+    });
+    return output
 }
 module.exports = {
      checkISBN, calculateISBNChecksum
