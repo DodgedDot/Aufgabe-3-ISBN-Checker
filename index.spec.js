@@ -1,6 +1,6 @@
-const {calculateISBNChecksum} = require('./index.js')
+const {calculateISBNChecksum} = require('./src/methods.js')
 
-describe('index.js', () => {
+describe('methods.js', () => {
 
     it('should accept a string of a ten-digit-number as Parameter and return a String', () => {
         inputString = "0000000000"

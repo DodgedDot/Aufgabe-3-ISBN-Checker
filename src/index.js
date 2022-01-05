@@ -1,4 +1,4 @@
-const {checkISBN, calculateISBNChecksum} = require('./index.js')
+const {checkISBN, calculateISBNChecksum} = require('./methods.js')
 
 document.getElementById('checkButton').addEventListener("click", checkISBN)
 inputFieldISBN = document.getElementById('inputFieldISBN')
