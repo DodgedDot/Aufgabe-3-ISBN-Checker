@@ -1,7 +1,6 @@
 
 function checkISBN(checkSum) {
     var inputArray = inputFieldISBN.value.split('')
-    console.log(inputArray[9])
     if(checkSum === inputArray[9]){
         userFeedback.textContent = "ISBN is valid"
         userFeedback.style.color = "green"
@@ -22,9 +21,12 @@ function calculateISBNChecksum (inputString){
         sum += output[i]
     }
     result = sum % 11
-    console.log("test-1")
     return result.toString()
 }
+
+function comparingChecksums() {
+    return checkISBN(calculateISBNChecksum(inputFieldISBN.value))
+}
 module.exports = {
-     checkISBN, calculateISBNChecksum
+     calculateISBNChecksum, comparingChecksums
 }
