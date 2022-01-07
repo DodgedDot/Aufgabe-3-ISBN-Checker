@@ -1,7 +1,8 @@
 
 function checkISBN(checkSum) {
-    
-    if(tenthSpot[9] === checkSum.toString()){
+    var inputArray = inputFieldISBN.value.split('')
+    console.log(inputArray[9])
+    if(checkSum === inputArray[9]){
         userFeedback.textContent = "ISBN is valid"
         userFeedback.style.color = "green"
     } else{
@@ -21,6 +22,7 @@ function calculateISBNChecksum (inputString){
         sum += output[i]
     }
     result = sum % 11
+    console.log("test-1")
     return result.toString()
 }
 module.exports = {
