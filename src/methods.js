@@ -18,11 +18,13 @@ function calculateISBNChecksum (inputString){
     inputArray = inputString.split('')
     var output = []
     var sum = 0
+    var result = ""
     for(let i = 0; i < 9; i++){
         output[i] = parseInt(inputArray[i]) * (i + 1)
         sum += output[i]
     }
-    return sum % 11
+    result = sum % 11
+    return result.toString()
 }
 module.exports = {
      checkISBN, calculateISBNChecksum
