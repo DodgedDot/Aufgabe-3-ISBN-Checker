@@ -1,7 +1,7 @@
 
 function checkISBN(checkSum) {
     var inputArray = inputFieldISBN.value.split('')
-    if(checkSum === inputArray[9]){
+    if(checkSum === inputArray[9] || (checkSum === '10') && (inputArray[9] === 'X')){
         userFeedback.textContent = "ISBN is valid"
         userFeedback.style.color = "green"
     } else{
