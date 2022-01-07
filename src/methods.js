@@ -22,7 +22,7 @@ function calculateISBNChecksum (inputString){
         output[i] = parseInt(inputArray[i]) * (i + 1)
         sum += output[i]
     }
-    return sum
+    return sum % 11
 }
 module.exports = {
      checkISBN, calculateISBNChecksum
