@@ -1,8 +1,12 @@
 const {comparingChecksums} = require('./methods.js')
 
-inputFieldISBN = document.getElementById('inputFieldISBN')
-userFeedback = document.getElementById('userFeedback')
-document.getElementById('checkButton').addEventListener("click", comparingChecksums)
+const inputFieldISBN = document.getElementById('inputFieldISBN')
+const userFeedback = document.getElementById('userFeedback')
+document.getElementById('checkButton').addEventListener("click", checkingUserInput)
 document.getElementById('inputFieldISBN').addEventListener("focus", () => {
     userFeedback.textContent = ""
 });
+
+function checkingUserInput (){
+    comparingChecksums(inputFieldISBN.value)
+}

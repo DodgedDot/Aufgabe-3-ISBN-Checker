@@ -14,5 +14,7 @@ describe('methods.js', () => {
         expect(result).toBe("0")
     })
 
-    
+    //alle Tests nachtragen + Test von realen Büchern
+    //Test von Summe, dann Multiplikation, dann ... mittels 0001000000 = ...
+    //X und Extremfälle testen Bsp. Summe 001000001 (12) -> Summe: 2 Multiplikation: 12 Modulo: 1
 })
