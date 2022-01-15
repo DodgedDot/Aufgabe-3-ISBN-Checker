@@ -33,5 +33,5 @@ function comparingChecksums(userInput) {
     return checkISBN(calculateISBNChecksum(userInput), userInput)
 }
 module.exports = {
-     calculateISBNChecksum, comparingChecksums
+     calculateISBNChecksum, checkISBN, comparingChecksums
 }
