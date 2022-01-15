@@ -8,5 +8,10 @@ document.getElementById('inputFieldISBN').addEventListener("focus", () => {
 });
 
 function checkingUserInput (){
-    comparingChecksums(inputFieldISBN.value)
+    feedbackParams = comparingChecksums(inputFieldISBN.value)
+    const {feedbackText, feedbackColor} = feedbackParams
+    userFeedback.textContent = feedbackText
+    userFeedback.style.color = feedbackColor
+    console.log(feedbackText)
+    console.log(feedbackColor)
 }
