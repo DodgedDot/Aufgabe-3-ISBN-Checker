@@ -1,8 +1,7 @@
 const {calculateISBNChecksum, checkISBN} = require('./src/methods.js')
 
-describe('methods.js', () => {
+describe('checkISBN', () => {
 
-//Testing checkISBN
     it('should return that the ISBN is valid because of correct user-InputString at the tenth digit', () => {
         inputString = "1000000001"
         var result = checkISBN('1', inputString)
@@ -13,8 +12,9 @@ describe('methods.js', () => {
         var result = checkISBN('1', inputString)
         expect(result.feedbackText).toBe("ISBN is invalid")
     })
+}),
+describe('calculateISBNChecksum', () => {
 
-//Testing calculateISBNChecksum
     //Multiplication
     it('should return every number multiplied with its digit-number as a string', () => {
         inputString = "1000000000"
@@ -168,6 +168,5 @@ describe('methods.js', () => {
         var result = calculateISBNChecksum(inputString)
         expect(result).toBe("2")
     })
-
-    
+  
 })

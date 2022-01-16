@@ -1,7 +1,7 @@
 
 function checkISBN(checkSum, userInput) {
     var inputArray = userInput.split('')
-    const feedbackParams = {feedbackText: "", feedbackColor: ""}
+    var feedbackParams = {feedbackText: "", feedbackColor: ""}
     if(checkSum === inputArray[9] || (checkSum === '10') && (inputArray[9] === 'X')){
         feedbackParams.feedbackText = "ISBN is valid"
         feedbackParams.feedbackColor = "green"
@@ -13,7 +13,7 @@ function checkISBN(checkSum, userInput) {
 }
 
 function calculateISBNChecksum (inputString){
-    inputArray = inputString.split('')
+    var inputArray = inputString.split('')
     var output = []
     var sum = 0
     var result = ""
